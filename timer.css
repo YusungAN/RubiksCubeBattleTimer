@@ -1,0 +1,614 @@
+@media (max-width: 800px) {
+
+    html,
+    body {
+        background-color: black;
+        overflow: hidden;
+        height: 100%;
+        font-family: 'Armata', sans-serif;
+        margin: 0px;
+    }
+
+    input {
+        font-family: 'Armata', sans-serif;
+    }
+
+    #con1 {
+        width: 105%;
+        height: 50%;
+        background-color: white;
+        color: black;
+        transform: rotate(180deg);
+    }
+
+    #con2 {
+        width: 100%;
+        height: 600px;
+        background-color: black;
+        color: white;
+    }
+
+    .timer {
+        font-size: 17vw;
+        border: none;
+        width: 450px;
+        background-color: transparent;
+    }
+
+    #timer1 {
+        position: absolute;
+        left: 30%;
+        color: black;
+        z-index: 4;
+        top: 40%;
+    }
+
+    #timer2 {
+        position: absolute;
+        left: 30%;
+        top: 65%;
+        color: white;
+    }
+
+    td {
+        height: 20px;
+    }
+
+    #recordtable {
+        position: absolute;
+        top: 15%;
+        left: 37px;
+    }
+
+    #recordtable2 {
+        position: absolute;
+        left: 0px;
+        top: 58%;
+        color: white;
+    }
+
+    #line {
+        display: none;
+    }
+
+    #reset {
+        width: 120px;
+        height: 22px;
+        background-color: aqua;
+        text-align: center;
+        position: absolute;
+        top: 48.5%;
+        left: 42%;
+        z-index: 2;
+        border-radius: 5px;
+        border: 2px solid gray;
+        line-height: 25px;
+    }
+
+    .sharp1 {
+        width: 15px;
+        border: 2px solid black;
+    }
+
+    .rec1 {
+        width: 100px;
+        border: 2px solid black;
+    }
+
+    .sharp2 {
+        width: 15px;
+        border: 2px solid white;
+    }
+
+    .rec2 {
+        width: 100px;
+        border: 2px solid white;
+    }
+
+    #recdisplay {
+        position: absolute;
+        top: 35px;
+        height: 217px;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    #recdisplay2 {
+        position: absolute;
+        top: 35px;
+        height: 217px;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    .wins {
+        background-color: transparent;
+        font-size: 9vw;
+        width: 100px;
+        border: none;
+    }
+
+    #win1 {
+        color: black;
+        position: absolute;
+        top: 15%;
+        right: 0px;
+        z-index: 5;
+    }
+
+    #win2 {
+        color: white;
+        position: absolute;
+        top: 57%;
+        right: 0px;
+        z-index: 3;
+    }
+
+    #draw {
+        color: red;
+        font-size: 100px;
+        position: absolute;
+        top: 340px;
+        left: 35%;
+        z-index: 6;
+        display: none;
+    }
+
+    .scramble {
+        width: 102%;
+        background-color: gray;
+        z-index: 1;
+        text-align: center;
+        line-height: 60px;
+        font-size: 4vw;
+        border-bottom: 2px solid skyblue;
+        border-top: 2px solid skyblue;
+        overflow-x: auto;
+    }
+
+    #scramble1 {
+        position: absolute;
+        top: 0%;
+    }
+
+    #scramble2 {
+        position: absolute;
+        top: 50%;
+    }
+
+    #avgtable {
+        position: absolute;
+        top: 68%;
+        left: 75%;
+        font-size: 2.5vw;
+    }
+
+    #avgtable>div {
+        padding-bottom: 7px;
+    }
+
+    #avgtable2 {
+        position: absolute;
+        top: 83%;
+        left: 73%;
+        font-size: 2.5vw;
+        color: white;
+    }
+
+    #avgtable2>div {
+        padding-bottom: 7px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    html,
+    body {
+        background-color: black;
+        overflow: hidden;
+        height: 100%;
+        font-family: 'Armata', sans-serif;
+        margin: 0px;
+    }
+
+    input {
+        font-family: 'Armata', sans-serif;
+    }
+
+    #con1 {
+        width: 105%;
+        height: 50%;
+        background-color: white;
+        color: black;
+        transform: rotate(180deg);
+    }
+
+    #con2 {
+        width: 100%;
+        height: 600px;
+        background-color: black;
+        color: white;
+    }
+
+    .timer {
+        font-size: 17vw;
+        border: none;
+        width: 450px;
+        background-color: transparent;
+    }
+
+    #timer1 {
+        position: absolute;
+        left: 33%;
+        color: black;
+        z-index: 4;
+        top: 45%;
+    }
+
+    #timer2 {
+        position: absolute;
+        left: 33%;
+        top: 70%;
+        color: white;
+    }
+
+    td {
+        height: 20px;
+    }
+
+
+    #recordtable {
+        position: absolute;
+        top: 13%;
+        left: 20px;
+        font-size: 3vw;
+    }
+
+    #recordtable2 {
+        position: absolute;
+        left: 0px;
+        top: 57%;
+        font-size: 3vw;
+        color: white;
+    }
+
+    #line {
+        display: none;
+    }
+
+    #reset {
+        width: 20%;
+        height: 2%;
+        background-color: aqua;
+        text-align: center;
+        position: absolute;
+        top: 54%;
+        left: 41%;
+        z-index: 2;
+        border-radius: 5px;
+        border: 1px solid gray;
+        line-height: 150%;
+        font-size: 3vw;
+    }
+
+    .sharp1 {
+        width: 10px;
+        border: 1.5px solid black;
+    }
+
+    .rec1 {
+        width: 66px;
+        border: 1.5px solid black;
+    }
+
+    .sharp2 {
+        width: 10px;
+        border: 1.5px solid white;
+    }
+
+    .rec2 {
+        width: 66px;
+        border: 1.5px solid white;
+    }
+
+    #recdisplay {
+        position: absolute;
+        top: 35px;
+        height: 217px;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    #recdisplay2 {
+        position: absolute;
+        top: 35px;
+        height: 217px;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    .wins {
+        background-color: transparent;
+        font-size: 9vw;
+        width: 100px;
+        border: none;
+    }
+
+    #win1 {
+        color: black;
+        position: absolute;
+        top: 15%;
+        right: -50px;
+        z-index: 5;
+    }
+
+    #win2 {
+        color: white;
+        position: absolute;
+        top: 57%;
+        right: -60px;
+        z-index: 3;
+    }
+
+    #draw {
+        color: red;
+        font-size: 100px;
+        position: absolute;
+        top: 340px;
+        left: 35%;
+        z-index: 6;
+        display: none;
+    }
+
+    .scramble {
+        width: 102%;
+        background-color: gray;
+        z-index: 1;
+        text-align: center;
+        line-height: 170%;
+        font-size: 3.5vw;
+        border-bottom: 1px solid skyblue;
+        border-top: 1px solid skyblue;
+    }
+
+    #scramble1 {
+        position: absolute;
+        top: 0%;
+    }
+
+    #scramble2 {
+        position: absolute;
+        top: 50%;
+    }
+
+    #avgtable {
+        position: absolute;
+        top: 68%;
+        left: 75%;
+        font-size: 2.5vw;
+    }
+
+    #avgtable>div {
+        padding-bottom: 7px;
+    }
+
+    #avgtable2 {
+        position: absolute;
+        top: 83%;
+        left: 71%;
+        font-size: 2.5vw;
+        color: white;
+    }
+
+    #avgtable2>div {
+        padding-bottom: 7px;
+    }
+}
+
+@media (min-width: 801px) {
+
+    html,
+    body {
+        overflow: hidden;
+        height: 100%;
+        font-family: 'Armata', sans-serif;
+    }
+
+    input {
+        font-family: 'Armata', sans-serif;
+    }
+
+    #con1 {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        color: black;
+    }
+
+    #con2 {
+        position: absolute;
+        top: 0px;
+        left: 55%;
+        width: 45%;
+        height: 100%;
+        background-color: black;
+        color: white;
+    }
+
+    .timer {
+        font-size: 9vw;
+        position: absolute;
+        top: 260px;
+        background-color: transparent;
+        border: none;
+        width: 35%;
+    }
+
+    #timer1 {
+        position: absolute;
+        left: 15%;
+        color: black;
+        z-index: 4;
+    }
+
+    #timer2 {
+        position: absolute;
+        left: 100px;
+        color: white;
+        z-index: 4;
+        width: 60%;
+    }
+
+    td {
+        height: 20px;
+    }
+
+
+    #recordtable {
+        position: absolute;
+        top: 350px;
+    }
+
+    #recordtable2 {
+        position: absolute;
+        right: 15px;
+        top: 350px;
+        color: white;
+    }
+
+    #line {
+        width: 15%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: rotate(10deg);
+        z-index: 1;
+    }
+
+    #reset {
+        width: 120px;
+        height: 25px;
+        background-color: aqua;
+        text-align: center;
+        position: absolute;
+        top: 700px;
+        left: 45%;
+        z-index: 2;
+        border-radius: 5px;
+        border: 2px solid gray;
+        line-height: 25px;
+    }
+
+    .sharp1 {
+        width: 20px;
+        border: 2px solid black;
+    }
+
+    .rec1 {
+        width: 150px;
+        border: 2px solid black;
+    }
+
+    .sharp2 {
+        width: 20px;
+        border: 2px solid white;
+    }
+
+    .rec2 {
+        width: 150px;
+        border: 2px solid white;
+    }
+
+    #recdisplay {
+        position: absolute;
+        top: 35px;
+        height: 346px;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    #recdisplay2 {
+        position: absolute;
+        top: 35px;
+        height: 346px;
+        overflow-y: auto;
+        text-align: center;
+    }
+
+    .wins {
+        background-color: transparent;
+        font-size: 5vw;
+        width: 120px;
+        border: none;
+    }
+
+    #win1 {
+        color: black;
+        position: absolute;
+        top: 150px;
+        left: 45%;
+        z-index: 5;
+    }
+
+    #win2 {
+        color: white;
+        position: absolute;
+        top: 150px;
+        left: 0%;
+        z-index: 5;
+    }
+
+    #draw {
+        color: red;
+        font-size: 100px;
+        position: absolute;
+        top: 270px;
+        left: 630px;
+        z-index: 6;
+        display: none;
+    }
+
+    #scramble1 {
+        color: black;
+        width: 102%;
+        background-color: gray;
+        position: absolute;
+        top: 0px;
+        left: -10px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 45px;
+        border-bottom: 2px solid skyblue;
+        z-index: 11;
+    }
+
+    #scramble2 {
+        display: none;
+    }
+
+    #avgtable {
+        position: absolute;
+        top: 100px;
+        left: 15px;
+        font-size: 20px;
+    }
+
+    #avgtable>div {
+        padding-bottom: 10px;
+    }
+
+    #avgtable2 {
+        position: absolute;
+        top: 100px;
+        left: 470px;
+        font-size: 20px;
+        color: white;
+    }
+
+    #avgtable2>div {
+        padding-bottom: 10px;
+    }
+}

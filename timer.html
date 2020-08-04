@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Timer</title>
+    <link rel="stylesheet" type="text/css" href="./timer.css">
+    <link href="https://fonts.googleapis.com/css?family=Armata|Zilla+Slab&display=swap" rel="stylesheet">
+    <script src="./timer_2.js"></script>
+</head>
+
+<body onselectstart='return false'>
+    <div id="con1">
+        <div id="timer1" class="timer">0.00</div>
+        <input type="number" id="win1" class="wins" disabled value="0">
+        <div id="scramble1" class="scramble"></div>
+        <table id="recordtable">
+            <thead>
+                <th class="sharp1">#</th>
+                <th class="rec1">record</th>
+            </thead>
+            <tbody id="recdisplay">
+            </tbody>
+        </table>
+        <div id="avgtable">
+            <div id="sesavg">Session Avg : --</div>
+            <div id="curavg5">Current Ao5 : --</div>
+            <div id="curavg12">Current Ao12 : --</div>
+            <div id="bestavg5">best Ao5 : --</div>
+            <div id="bestavg12">best Ao12 : --</div>
+        </div>
+    </div>
+    <div id="line"></div>
+    <div id="con2">
+        <div id="timer2" class="timer">0.00</div>
+        <input type="number" id="win2" class="wins" disabled value="0">
+        <div id="scramble2" class="scramble"></div>
+        <table id="recordtable2">
+            <thead>
+                <th class="sharp2">#</th>
+                <th class="rec2">record</th>
+            </thead>
+            <tbody id="recdisplay2">
+            </tbody>
+        </table>
+        <div id="avgtable2">
+            <div id="sesavg-2">Session Avg : --</div>
+            <div id="curavg5-2">Current Ao5 : --</div>
+            <div id="curavg12-2">Current Ao12 : --</div>
+            <div id="bestavg5-2">best Ao5 : --</div>
+            <div id="bestavg12-2">best Ao12 : --</div>
+        </div>
+    </div>
+
+    <div id="reset" onclick="removeAll();">All Reset</div>
+    <div id="draw">Draw</div>
+</body>
+
+</html>
