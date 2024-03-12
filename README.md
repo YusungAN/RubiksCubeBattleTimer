@@ -13,4 +13,4 @@
 
 ## 링크
 
-https://anyusung.me/japgeot/timer.html
+http://158.179.195.67/show/RubiksCubeBattleTimer/timer.html
